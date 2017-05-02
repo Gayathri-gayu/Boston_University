@@ -1,8 +1,8 @@
 /*navigation bar background color*/
-.nav-color
+/*.nav-color
 {
 	background-color: #708090;
-}
+}*/
 
 /* style for texts inside navigation bar*/
 nav div div ul li a
@@ -40,15 +40,9 @@ padding-left: 3px;
 padding-right: 3px;
 }
 /*css or navbar header*/
-.navbar-header img 
-{  
-  padding bottom: 15px;
-  padding-top: 0;
-  width: 50%;
-  display: inline-block;
-}
+
 header h1
-{ padding-top: 2%;
+{ 
 	font-size: 50px;
 }
 /*.carousel*/
@@ -109,6 +103,7 @@ font-size: 17px;
    
 }
 /*css for landing pg*/
+
 .landing-page{
 	background-image: url(../img/backgroundimg.png);
 	background-repeat: no-repeat;

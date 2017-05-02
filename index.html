@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <!-- head section-->
 <head>
@@ -21,21 +21,24 @@
 <body >
 
 <!-- start of navigation bar-->
-    <nav class="navbar navbar-default navbar-fixed-top nav-color">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
-          <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+        <div>
+          <button class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse" type="button">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+        </div>
 
           <!--logo-->
-          <div class="navbar-header">
+          <!-- <div class="navbar-header">
         	 <a href="/"><img src="img/logo3.jpg" alt="logo" ></a>
-          </div>
+          </div> -->
           <!-- end of logo-->
 
-    			<div id="navbar" class="navbar-collapse collapse navbar-responsive-collapse pull-left">
+    			<!-- <div id="navbar" class="navbar-collapse collapse navbar-responsive-collapse pull-left"> -->
+        <div id="navbarCollapse" class="navbar-collapse collapse ">
     				<ul class="nav navbar-nav">
       				<li class="active"><a href="#">Apply</a></li>
       				<li><a href="#">Visit</a></li>
@@ -61,20 +64,18 @@
       				  <li><a href="#">Parents</a></li>
       				  <li><a href="#">Students</a></li>
     				</ul>
-    			</div>
-
 
     			<div>
-    				<ul class="nav navbar-nav navbar-right">
-      				<!-- <li><a href="signin.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
-             <li><a href="#myModal1" data-toggle="modal" data-target="#myModal1">
-              <span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    				<ul class="nav navbar-nav pull-right">
+              <li><a href="#myModal1" data-toggle="modal" data-target="#myModal1">
+                <span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
               <li><a href="#myModal" data-toggle="modal" data-target="#myModal">
                  <span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     				</ul>
   				</div>
-<!--   		</div>
- -->    </nav>
+        </div>
+      </div>  
+    </nav>
 <!-- end of navigation bar-->
  
 
@@ -86,7 +87,7 @@
 
 <!--carousel slide-->
 <section >
-<!-- <h4 class="section-head"><strong>-Ever To Excel-</strong></h4> -->
+<h2 class="section-head"><strong>-Ever To Excel-</strong></h2>
   <article id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -239,7 +240,8 @@
 <!--footer-->
 <footer id="footer" class="page-footer center-on-small-only ">
   <div class="container">
-    <div class="row wow fadeIn" data-wow-delay="0.2s">
+ <!--    <div class="row wow fadeIn" data-wow-delay="0.2s"> -->
+    <div class="row">
       <div class="col-md-3 offset-md-1">          
         <h2 class="footer-class"><strong>Visit this sites</strong></h2>
           <a href="https://en.wikipedia.org/wiki/Academia.edu" >Academia.edu</a>
@@ -278,7 +280,7 @@
     </div>
   </div>
 </footer>
-</div>
+
 <!--/.Footer-->
 
 <!--modal-->
@@ -291,7 +293,7 @@
         </div>
         <div class="modal-body">
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
+            <label >Email address</label>
             <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
           </div>
           <div class="form-group">
@@ -317,23 +319,23 @@
         </div>
         <div class="modal-body">
           <div class="form-group">
-            <label for="examplefirstName">First Name:</label>
+            <!-- <label for="examplefirstName">First Name:</label> -->
             <input type="text" name="first_name" id="first_name" class="form-control input-sm floatlabel" placeholder="First Name">
           </div>
           <div class="form-group">
-            <label for="examplelastName">Last Name:</label>
+            <!-- <label for="examplelastName">Last Name:</label> -->
             <input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
           </div>
           <div class="form-group">
-            <label for="exampleEmail">Email:</label>
+            <!-- <label for="exampleEmail">Email:</label> -->
             <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
           </div>
           <div class="form-group">
-            <label for="examplePassword">Password:</label>
+            <!-- <label for="examplePassword">Password:</label> -->
             <input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
           </div>
           <div class="form-group">
-            <label for="examplePasswordConfirm">Password Confirmation:</label>
+            <!-- <label for="examplePasswordConfirm">Password Confirmation:</label> -->
             <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" 
             placeholder="Confirm Password">
           </div>
