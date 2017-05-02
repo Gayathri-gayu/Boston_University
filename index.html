@@ -66,13 +66,15 @@
 
     			<div>
     				<ul class="nav navbar-nav navbar-right">
-      				<li><a href="signin.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      				<!-- <li><a href="signin.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
+             <li><a href="#myModal1" data-toggle="modal" data-target="#myModal1">
+              <span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
               <li><a href="#myModal" data-toggle="modal" data-target="#myModal">
                  <span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     				</ul>
   				</div>
-  		</div>
-    </nav>
+<!--   		</div>
+ -->    </nav>
 <!-- end of navigation bar-->
  
 
@@ -276,6 +278,7 @@
     </div>
   </div>
 </footer>
+</div>
 <!--/.Footer-->
 
 <!--modal-->
@@ -304,6 +307,44 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="myModal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">SignUp</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="examplefirstName">First Name:</label>
+            <input type="text" name="first_name" id="first_name" class="form-control input-sm floatlabel" placeholder="First Name">
+          </div>
+          <div class="form-group">
+            <label for="examplelastName">Last Name:</label>
+            <input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleEmail">Email:</label>
+            <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+          </div>
+          <div class="form-group">
+            <label for="examplePassword">Password:</label>
+            <input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="examplePasswordConfirm">Password Confirmation:</label>
+            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" 
+            placeholder="Confirm Password">
+          </div>
+          <div class="modal-footer">
+            <a href="#" data-dismiss="modal" class="btn">Close</a>
+            <input type="submit" value="Register" class="btn btn-info btn-block">   
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
 <!--end of modal-->
 </body>
 </html>
