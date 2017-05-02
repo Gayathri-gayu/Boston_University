@@ -1,8 +1,16 @@
-/*navigation bar background color*/
-/*.nav-color
+
+/*logo*/
+.navbar-brand
 {
-	background-color: #708090;
-}*/
+	padding:0px;
+}
+ .navbar-brand>img
+ {
+ 	height:110%;
+ 	padding:15px;
+ 	width:auto;
+ }
+/*end of logo*/
 
 /* style for texts inside navigation bar*/
 nav div div ul li a
@@ -52,6 +60,13 @@ header h1
  max-height: 750px !important;
 }
  
+ .carousel-caption
+{
+	color:white;
+	font-style: initial;
+	font-size:25px;
+}
+
  .campus-style
 {
 color:#e9ab18;
@@ -59,6 +74,7 @@ text-align: center;
 font-size:40px;
 font-family:'Lobster', cursive;
 padding-bottom: 30px;
+text-shadow: 7px 7px 7px black;
 }
 
 
@@ -78,10 +94,9 @@ padding-bottom: 10px;
 color:#cc0066;
 text-align: justify;
 font-family: 'Roboto', sans-serif;
-font-size: 17px;
- margin-bottom: 20px;
-    text-align: center;
-    padding-bottom: 10px;
+font-size: 17px; margin-bottom: 20px;
+text-align: center;
+padding-bottom: 10px;
 }
 .img-class
 {
@@ -100,7 +115,7 @@ font-size: 17px;
 	letter-spacing: 5px;
 	text-shadow: 7px 7px 7px #8f9193;
 	text-align: center;
-   
+
 }
 /*css for landing pg*/
 
@@ -157,9 +172,9 @@ font-size: 17px;
 {
 	font-family:'Lobster', cursive; 
 	font-size: 65px; 
-	color:330033;
+	color:#e9ab18;
 	text-align:center;
-	text-shadow: 7px 7px 7px #8f9193;
+	text-shadow: 7px 7px 7px black;
 	padding-top: 1%;
 	padding-bottom: 1%;
 }
@@ -176,7 +191,7 @@ font-size: 17px;
 .schedule-style
 {
 	font-family:'Indie Flower', cursive; 
-	color:#993300;
+	color:#e9ab18;
 	text-align: center;
 	
 }
@@ -191,6 +206,7 @@ font-size: 17px;
 .footer-class
 {
 	font-family:'Indie Flower', cursive; 
+	color:#e9ab18;
 }
 
 .footer .footer-align a
@@ -200,7 +216,7 @@ font-size: 17px;
 
 footer a
 {
-	color:blue;
+	color:white;
 	display: block;
 	text-decoration: none;
 }
@@ -208,13 +224,13 @@ footer {
 	width: 100%;
 	height:100%;
 	clear: both;
-    background: #eae9e9;
+    background: black;
 	margin: 0 auto; 
 }
 
 .contact-class
 {
-	color:blue;
+	color:white;
 	display: block;
 	text-decoration: none;
 	padding-right: 3px;
@@ -245,7 +261,7 @@ footer {
  .text-center
  {
  	margin-bottom: 1%;
- 	margin-top:1%; 
+ 	padding-top:1%; 
  }
 
 /* video container*/
@@ -272,7 +288,7 @@ footer {
 
 .video-style
 {
-	background-image: url(../img/visit.png);
+	background-image: url(../img/book_2.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
 	margin:0%;
@@ -310,14 +326,15 @@ margin-top:5%;
 }
 /*end*/
 /* css fo sign in page*/
-/*body{
-    background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2F2727));
+body{
+    /*background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2F2727));
     background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
     background: -moz-radial-gradient(circle, #1a82f7, #2F2727);
-    background: -ms-radial-gradient(circle, #1a82f7, #2F2727);
-    height:600px;
+    background: -ms-radial-gradient(circle, #1a82f7, #2F2727);*/
+   /* background: #990000;
+   */
 }
-*/
+
 .form-style{
 	margin-top: 60px;
 }
@@ -334,3 +351,8 @@ label.label-floatlabel {
 }
 /*end of sign in */
 
+/* for responsive page*/
+html, body {
+  width: auto;
+  overflow-x: hidden;
+}

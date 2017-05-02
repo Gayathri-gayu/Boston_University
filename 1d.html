@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-  <title>Vibrant campus</title>
-	  <meta charset="UTF-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boston College</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -13,28 +13,27 @@
     <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="img/logo3.jpg" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 
 <body>
 <!-- start of navigation bar-->
-    <nav class="navbar navbar-default navbar-fixed-top nav-color">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
-          <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+        <div>
+          <button class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse" type="button">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <a class="navbar-brand" href="#"><img src="img/logo1.jpg" alt="logo"></a>
+        </div>
 
-          <!--logo-->
-          <div class="navbar-header">
-           <a href="/"><img src="img/logo3.jpg" alt="logo" ></a>
-          </div>
-          <!-- end of logo-->
-
-          <div id="navbar" class="navbar-collapse collapse navbar-responsive-collapse pull-left">
+          <!-- <div id="navbar" class="navbar-collapse collapse navbar-responsive-collapse pull-left"> -->
+        <div id="navbarCollapse" class="navbar-collapse collapse ">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">Apply</a></li>
-              <li><a href="#">Visit</a></li>
+              <!-- <li><a href="#">Visit</a></li> -->
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Academics<span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -54,19 +53,20 @@
 
                 <li><a href="#">Contacts</a></li>
                 <li><a href="#">Alumini</a></li>
-                <li><a href="#">Parents</a></li>
+                <!-- <li><a href="#">Parents</a></li> -->
                 <li><a href="#">Students</a></li>
             </ul>
-          </div>
-
 
           <div>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <ul class="nav navbar-nav pull-right">
+              <li><a href="#myModal1" data-toggle="modal" data-target="#myModal1">
+                <span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="#myModal" data-toggle="modal" data-target="#myModal">
+                 <span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
           </div>
-      </div>
+        </div>
+      </div>  
     </nav>
 <!-- end of navigation bar-->
 
@@ -89,7 +89,7 @@
 
             <div class="hero-description lead">
               <p>
-                The campus provides space and facilities that will create greater dynamism and vibrancy and foster the sense of community. The SKCT campus is well planned with infrastructure like academic buildings, administration wing, central library, hostel and play grounds.
+                The campus provides space and facilities that will create greater dynamism and vibrancy and foster the sense of community. The BC campus is well planned with infrastructure like academic buildings, administration wing, central library, hostel and play grounds.
               </p>
               <p>
                 A great College requires not just great students but a vibrant community to support their development and to prepare them for academic, personal, and professional success. The College is committed to creating opportunities for students as they engage in a creative community of learning and socialize around their shared passion for the power of ideas. 
@@ -219,16 +219,23 @@
 
 
 <!--scroll up-->
+<!-- <div class="text-center">
+  <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" 
+    data-toggle="tooltip" data-placement="left">
+    <span class="glyphicon glyphicon-chevron-up"></span>Back to top
+  </a>
+</div> -->
+ <!--end of scroll up-->
+       
+<!--footer-->
+
+<footer id="footer" class="page-footer center-on-small-only ">
 <div class="text-center">
   <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" 
     data-toggle="tooltip" data-placement="left">
     <span class="glyphicon glyphicon-chevron-up"></span>Back to top
   </a>
 </div>
- <!--end of scroll up-->
-       
-<!--footer-->
-<footer id="footer" class="page-footer center-on-small-only ">
   <div class="container">
     <div class="row wow fadeIn" data-wow-delay="0.2s">
       <div class="col-md-3 offset-md-1">          
@@ -270,6 +277,72 @@
   </div>
 </footer>
 <!--/.Footer-->
+
+<!--modal-->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Log-in</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label >Email address</label>
+            <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
+          </div>
+            <p class="text-right"><a href="#">Forgot password?</a></p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn">Close</a>
+          <a href="#" class="btn btn-primary">Log-in</a>    
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">SignUp</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <!-- <label for="examplefirstName">First Name:</label> -->
+            <input type="text" name="first_name" id="first_name" class="form-control input-sm floatlabel" placeholder="First Name">
+          </div>
+          <div class="form-group">
+            <!-- <label for="examplelastName">Last Name:</label> -->
+            <input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
+          </div>
+          <div class="form-group">
+            <!-- <label for="exampleEmail">Email:</label> -->
+            <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+          </div>
+          <div class="form-group">
+            <!-- <label for="examplePassword">Password:</label> -->
+            <input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <!-- <label for="examplePasswordConfirm">Password Confirmation:</label> -->
+            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" 
+            placeholder="Confirm Password">
+          </div>
+          <div class="modal-footer">
+            <a href="#" data-dismiss="modal" class="btn">Close</a>
+            <input type="submit" value="Register" class="btn btn-info btn-block">   
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+<!--end of modal-->
 
 </body>
 </html>
