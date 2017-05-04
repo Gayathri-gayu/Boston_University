@@ -374,6 +374,7 @@ html, body {
 	}
 
 }
+/* grid style css*/
 .grid-style{
     background-color: rgba(0, 0, 0, 0.55);
     padding: 20px;
@@ -411,6 +412,8 @@ html, body {
     -webkit-transition: all 0.9s ease 0s;
     -o-transition: all 0.9s ease 0s;
 }
+/*end*/
+
 /*animation*/
 .tech-slideshow {
   height: 300px;
@@ -460,6 +463,7 @@ body
 {
 	background-color: black;
 }
+/*for scroll up button*/
 #scroll 
 { 
 display: inline;  
@@ -483,8 +487,10 @@ text-decoration: none;
  background-color: #0066cc;
 }
 
+/* animation */
 .animated
 {
 	animation-duration: 10s;
 }
 
+/*end*/
